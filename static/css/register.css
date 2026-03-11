@@ -1,0 +1,122 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: url("../images/register.jpg") no-repeat;
+	background-size: cover;
+}
+.register {
+	width: 500px;
+	height: 590px;
+	background: rgba(242, 242, 242, 0.8);
+	margin: 45px auto;
+	border-radius: 10px;
+}
+
+.register h2 {
+	color: rgb(95, 182, 196);
+}
+
+.title {
+	line-height: 30px;
+	padding-top: 30px;
+	margin: 30px 30px;
+	border-bottom: 1px solid gray;
+}
+
+.layui-form input:not(#agreement) {
+	/* width: 275px; */
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid rgb(201, 201, 201);
+	/* outline: 1px solid rgb(213, 213, 213); */
+}
+
+.register-information .items:nth-last-child(2) {
+	width: 100%;
+	text-align: center;
+}
+
+.register-information label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+}
+
+.items {
+	/* width: 385px; */
+	margin-left: 20px;
+}
+.danger{
+	color: #ff5722;
+}
+.agreement{
+	position: relative;
+	bottom: 0;
+	margin: 0 0 0 140px;
+}
+.agreement>a{
+	color: rgb(55, 0, 255);
+}
+.agreement>a:hover{
+	text-decoration: underline blue;
+}
+.login{
+	margin-left: 300px;
+}
+.login>a{
+	color: rgb(55, 0, 255);
+}
+.login>a:hover{
+	color: rgb(55, 0, 255);
+	text-decoration: underline blue;
+}
+.register-information .btn-submit,
+.btn-reset {
+	width: 120px;
+	height: 45px;
+	margin: 0 20px;
+}
+
+.btn-submit {
+	background-color: rgb(103, 198, 236);
+	color: white;
+	border: none;
+}
+.btn-submit:hover{
+	background-color: rgb(0, 145, 255);
+}
+.btn-reset {
+	background-color: rgb(252, 128, 128);
+	color: white;
+	border: none;
+}
+.btn-reset:hover{
+	background-color: rgb(253, 91, 91);
+}
+
+.btn {
+	width: 340px;
+	margin: 6px auto;
+}
+footer{
+	width: 100%;
+	position:absolute;
+	bottom: 0;
+}
+.foot {
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	text-align: center;
+	font-size: 13px;
+	color: #666;
+	background-color: #FCFCFC;
+	padding: 20px 0px;
+}
+
+.foot a {
+	text-decoration: none;
+	color: #666;
+}

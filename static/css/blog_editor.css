@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(240, 240, 240);
+}
+.nav-seach{
+    float: right;
+    margin-top: 12px;
+}
+#editor,
+.container{
+    border-radius: 10px;
+}
+.container{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+}

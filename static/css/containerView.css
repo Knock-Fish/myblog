@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(240, 240, 240);
+}
+.nav-seach{
+    float: right;
+    margin-top: 12px;
+}
+.container-text{
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    font-size: 18px;
+}
+.container{
+    width:1200px;
+    box-sizing: border-box;
+    margin: 15px auto 0;
+}
+.container .username-view{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+    padding: 0 15px;
+    color: rgb(141, 141, 141);
+    background-color: rgba(245, 245, 245,.6);
+} 
+.container .title{
+    width: 100%;
+    height: 50px;
+    font-size: 32px;
+    padding: 10px 10px;
+}
+.container .container-text{
+    line-height: 35px;
+    padding: 20px;
+}
+.column{
+    padding: 6px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+}
