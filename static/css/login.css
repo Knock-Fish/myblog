@@ -1,0 +1,92 @@
+a{
+	text-decoration:none;
+	color:#808080;
+}
+/*头部*/
+body{
+	background:url("../images/bg.jpg") no-repeat;
+	background-size: cover;
+}
+.head{
+	border: 1px solid gray;
+	height: 50px;
+	background-color: #dbdbdb;
+}
+.icon img{
+	width: 40px;
+	height: 40px;
+	padding-left: 50px;
+	margin-top: 5px;
+}
+.login{
+	float: left;
+	border: 1px solid  #e8e5e5;
+	height: 350px;
+	width: 300px;
+	box-shadow: 3px 3px 10px rgb(163, 163, 163);
+	background-color:rgb(255,255,249);
+}
+.login-container{
+	width: 250px;
+	margin: auto;
+}
+.title{
+	font-size:18px;
+	color:#494949;
+	margin: 20px auto 0;	
+	width:246px;
+	border-bottom:1px solid #E2E2E2;
+	padding-bottom:5px;
+	margin-bottom:10px;
+}
+.remenber{
+	margin:8px 0 0 30px;
+	height:12px;
+}
+.rlog{
+	color:#333;
+	font-size:12px;
+}
+.forget_pwd{
+	float: right;
+	margin-right: 15px;
+	font-size:14px;
+}
+.btn_login{
+	width: 250px;
+	margin: 5px auto;
+}
+.register{
+	float: right;
+	font-size:14px;
+	margin: 6px 20px;
+}
+.register a{
+	color:#2858FF;
+}
+.three{
+	display:inline-block;
+	width: 246px;
+	margin:5px 0 0 25px;
+	padding-top: 5px;
+	border-top: 1px solid #E2E2E2;
+	font-size:14px;
+}
+footer{
+	width: 100%;
+	position:absolute;
+	bottom: 0;
+}
+.foot {
+	line-height: 60px;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	font-size: 13px;
+	color: #666;
+	background-color: #FCFCFC;
+}
+.foot a {
+	text-decoration: none;
+	color: #666;
+}

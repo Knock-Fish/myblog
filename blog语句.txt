@@ -1,0 +1,55 @@
+// 用户表
+create table users(
+userid bigint(20) auto_increment primary key,
+username varchar(18) unique not null,
+sex char(1) not null default '男',
+email char(20) unique not null,
+password char(50) not null,
+tel char(11) unique not null,
+createtime timestamp not null default current_timestamp
+)auto_increment=1 default charset=utf8mb4 engine=InnoDB;
+
+// 管理员表
+create table admin(
+admin_id bigint(20) auto_increment primary key,
+admin_name  varchar(18) unique not null,
+admin_password char(16) not null
+)auto_increment=1 default charset=utf8mb4 engine=InnoDB;
+
+insert into admin values(null,'超级管理员','123456');
+
+//文章表
+create table articles(
+article_id bigint(20) auto_increment primary key,
+userid bigint(20)  null,
+admin_id bigint(20)  null,
+article_title text not null,
+article_content longtext not null,
+article_views bigint(20) not null,
+article_date timestamp not null default current_timestamp,
+constraint articles_ib_fk_1 foreign key(userid) references users(userid),
+constraint articles_ib_fk_2 foreign key(admin_id) references admin(admin_id)
+)auto_increment=1 default charset=utf8mb4 engine=InnoDB;
+
+// 分类表
+create table classify(
+classify_id bigint(20) auto_increment primary key,
+classify_name varchar(18) unique not null
+)auto_increment=1 default charset=utf8mb4 engine=InnoDB;
+
+insert into classify values(null,'java');
+insert into classify values(null,'javascript');
+insert into classify values(null,'python');
+insert into classify values(null,'html');
+insert into classify values(null,'css');
+insert into classify values(null,'php');
+insert into classify values(null,'go');
+
+// 文章设置分类表
+create table articles_classify(
+article_id bigint(20) not null,
+classify_id bigint(20) not null,
+constraint articles_classify_fk_1 foreign key(article_id) references articles(article_id),
+constraint articles_classify_fk_2 foreign key(classify_id) references classify(classify_id)
+)charset=utf8mb4 engine=InnoDB;
+
